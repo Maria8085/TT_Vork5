@@ -1,0 +1,19 @@
+body{
+    overflow: hidden;
+    background-color: #F8FAFF;
+    margin: 0;
+    padding: 0;
+}
+
+.menu{
+    width: 256px;
+    height: 100%;
+    background-color:#FFFFFF;
+    box-shadow: 0px 0px 38px rgba(136, 167, 245, 0.08);
+}
+
+.header{}
+
+.main{
+    
+}
