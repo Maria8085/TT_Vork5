@@ -4,42 +4,100 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link href="./index.css" rel="stylesheet">
     <title>Ворк5</title>
 </head>
 <body>
-    <div class="row">
-        <aside class="menu">
-            <a>Главная</a>
-            <a>Главная</a>
-            <a>Главная</a>
-            <a>Главная</a>
-            <a>Главная</a>
-            <a>Главная</a>
-            <a>Главная</a>
-            <a>Главная</a>
-            <a>Главная</a>
-            <a>Главная</a>
-            <a>Главная</a>
-            <a>Главная</a>
+    <div class="row me-0">
+        <aside class="menu col p-0">
+            <ul class="list-group d-flex justify-content-center h-100">
+                <li class="list-group-item border-0"><a>Главная</a></li>
+                <li class="list-group-item border-0"><a>Мои магазины</a></li>
+                <li class="list-group-item border-0"><a>Промоматериалы</a></li>
+                <li class="list-group-item border-0"><a>Статистика</a></li>
+                <li class="list-group-item border-0"><a>Баланс</a></li>
+                <li class="list-group-item border-0"><a>Персональные данные</a></li>
+                <li class="list-group-item border-0"><a>FAQ</a></li>
+                <li class="list-group-item border-0"><a>Техподдержка</a></li>
+                <li class="list-group-item border-0"><a>Выход</a></li>
+            </ul>
         </aside>
-        <header class="header">
-            <span> Главная 	&#62; Мои магазины </span>
-            <button>Почта</button>
-            <button>Максим Добжанский</button>
-        </header>
-        <main class="main">
-            <button>Создать свой магазин</button>
-            <h2>Управление магазинами</h2>
-            <div>
-                <div>
-                    <span>№</span>
-                    <span>Название</span>
-                    <span>Адрес</span>
-                    <span>Действие</span>
+        <div class="col p-4">
+            <header class="header row m-0">
+                <span class="col"> Главная 	&#62; Мои магазины </span>
+                <div class="col-auto">
+                    <button type="button" class="btn btn-outline-secondary border rounded-1">Почта</button>
+                    <button type="button" class="btn btn-light shadow rounded-1">
+                        <div class="icon rounded-circle text-bg-secondary"></div>
+                        Максим Добжанский
+                    </button>
+                </div>
+            </header>
+            <main class="main">
+                <button type="button" class="btn btn-success rounded-1" data-bs-toggle="modal" data-bs-target="#exampleModal">Создать свой магазин</button>
+                <h2>Управление магазинами</h2>
+
+                <div class="list-group p-4 bg-white">
+                    <table class="table table-borderless">
+                        <thead>
+                            <tr>
+                                <th scope="col border-0">№</th>
+                                <th scope="col border-0">Название</th>
+                                <th scope="col border-0">Адрес</th>
+                                <th scope="col border-0">Действие</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td scope="row">12345</td>
+                                <td>Дипломная работа</td>
+                                <td>http://www.work5.ru/services</td>
+                                <td>
+                                    <button type="button" class="btn btn-success rounded-1">Редактировать</button>
+                                    <button type="button" class="btn btn-secondary rounded-1">Редактировать</button>
+                                </td>
+                            </tr>
+                            <tr class="border-top">
+                                <td scope="row">12345</td>
+                                <td>Дипломная работа</td>
+                                <td>http://www.work5.ru/services</td>
+                                <td>
+                                    <button type="button" class="btn btn-success rounded-1">Редактировать</button>
+                                    <button type="button" class="btn btn-secondary rounded-1">Редактировать</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </main>
+
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title fs-5" id="exampleModalLabel">Создать магазин</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <div>
+                            <h3>Шаблон</h3>
+                            <h3>Цветовая схема</h3>
+                        </div>
+                        <h3>Домен</h3>
+                        <span>В названии домена разрешены латиница и “-”, запрещается использовать словосочетание Work 5. 
+                            После создания магазина Вы сможете прикрутить свой домен (например ivangrozniy.ru). Подробнее по ссылке
+                        </span>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary rounded-1" data-bs-dismiss="modal">Отмена</button>
+                        <button type="button" class="btn btn-success rounded-1">Создать</button>
+                      </div>
+                    </div>
                 </div>
             </div>
-        </main>
+        </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>
