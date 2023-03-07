@@ -4,41 +4,160 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./styles/font.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link href="./index.css" rel="stylesheet">
+    <link href="./styles/index.css" rel="stylesheet">
     <title>Ворк5</title>
 </head>
 <body>
     <div class="row me-0">
-        <aside class="menu col p-0">
-            <ul class="list-group d-flex justify-content-center h-100">
-                <li class="list-group-item border-0"><a>Главная</a></li>
-                <li class="list-group-item border-0"><a>Мои магазины</a></li>
-                <li class="list-group-item border-0"><a>Промоматериалы</a></li>
-                <li class="list-group-item border-0"><a>Статистика</a></li>
-                <li class="list-group-item border-0"><a>Баланс</a></li>
-                <li class="list-group-item border-0"><a>Персональные данные</a></li>
-                <li class="list-group-item border-0"><a>FAQ</a></li>
-                <li class="list-group-item border-0"><a>Техподдержка</a></li>
-                <li class="list-group-item border-0"><a>Выход</a></li>
+        <aside class="menu col d-none d-lg-block">
+            <ul class="list-group h-100">
+                <li class="list-group-item border-0 ms-3">
+                    <a class="nav-link d-flex gap-4" aria-current="page" href="#">
+                        <img class="normal" src="./images/дом.svg" alt="">
+                        <img class="active" src="./images/домActive.svg" alt="">
+                        Главная</a>
+                </li>
+                <li class="list-group-item border-0 ms-3 active">
+                    <a class="nav-link d-flex gap-4" aria-current="page" href="#">
+                        <img class="normal" src="./images/тележка.svg" alt="">
+                        <img class="active" src="./images/тележкаActive.svg" alt="">
+                        Мои магазины</a>
+                </li>
+                <li class="list-group-item border-0 ms-3">
+                    <a class="nav-link d-flex gap-4" aria-current="page" href="#">
+                        <img class="normal" src="./images/мегафон.svg" alt="">
+                        <img class="active" src="./images/мегафонActive.svg" alt="">
+                        Промоматериалы</a>
+                </li>
+                <li class="list-group-item border-0 ms-3">
+                    <a class="nav-link d-flex gap-4" aria-current="page" href="#">
+                        <img class="normal" src="./images/диаграмма.svg" alt="">
+                        <img class="active" src="./images/диаграммаActive.svg" alt="">
+                        Статистика</a>
+                </li>
+                <li class="list-group-item border-0 ms-3">
+                    <a class="nav-link d-flex gap-4" aria-current="page" href="#">
+                        <img class="normal" src="./images/кошелек.svg" alt="">
+                        <img class="active" src="./images/кошелекActive.svg" alt="">
+                        Баланс</a>
+                </li>
+                <li class="list-group-item border-0 ms-3">
+                    <a class="nav-link d-flex gap-4" aria-current="page" href="#">
+                        <img class="normal" src="./images/аватар.svg" alt="">
+                        <img class="active" src="./images/аватарActive.svg" alt="">
+                        Персональные данные</a>
+                </li>
+                <li class="list-group-item border-0 ms-3">
+                    <a class="nav-link d-flex gap-4" aria-current="page" href="#">
+                        <img class="normal" src="./images/вопрос.svg" alt="">
+                        <img class="active" src="./images/вопросActive.svg" alt="">
+                        FAQ</a>
+                </li>
+                <li class="list-group-item border-0 ms-3">
+                    <a class="nav-link d-flex gap-4" aria-current="page" href="#">
+                        <img class="normal" src="./images/гарнитура.svg" alt="">
+                        <img class="active" src="./images/гарнитураActive.svg" alt="">
+                        Техподдержка</a>
+                </li>
+                <li class="list-group-item border-0 ms-3">
+                    <a class="nav-link d-flex gap-4" aria-current="page" href="#">
+                        <img class="normal" src="./images/выход.svg" alt="">
+                        <img class="active" src="./images/выходActive.svg" alt="">
+                        Выход</a>
+                </li>
             </ul>
         </aside>
-        <div class="col p-4">
+        <div class="col">
             <header class="header row m-0">
-                <span class="col"> Главная 	&#62; Мои магазины </span>
+                <div class="col d-lg-none d-flex">
+                    <nav class="navbar bg-body-tertiary">
+                        <div class="container-fluid">
+                        <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                            <div class="offcanvas-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body align-items-center p-0">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item border-0 ms-1">
+                                    <a class="nav-link d-flex gap-4" aria-current="page" href="#">
+                                        <img class="normal" src="./images/дом.svg" alt="">
+                                        <img class="active" src="./images/домActive.svg" alt="">
+                                        Главная</a>
+                                </li>
+                                <li class="nav-item border-0 ms-1 active">
+                                    <a class="nav-link d-flex gap-4" aria-current="page" href="#">
+                                        <img class="normal" src="./images/тележка.svg" alt="">
+                                        <img class="active" src="./images/тележкаActive.svg" alt="">
+                                        Мои магазины</a>
+                                </li>
+                                <li class="nav-item border-0 ms-1">
+                                    <a class="nav-link d-flex gap-4" aria-current="page" href="#">
+                                        <img class="normal" src="./images/мегафон.svg" alt="">
+                                        <img class="active" src="./images/мегафонActive.svg" alt="">
+                                        Промоматериалы</a>
+                                </li>
+                                <li class="nav-item border-0 ms-1">
+                                    <a class="nav-link d-flex gap-4" aria-current="page" href="#">
+                                        <img class="normal" src="./images/диаграмма.svg" alt="">
+                                        <img class="active" src="./images/диаграммаActive.svg" alt="">
+                                        Статистика</a>
+                                </li>
+                                <li class="nav-item border-0 ms-1">
+                                    <a class="nav-link d-flex gap-4" aria-current="page" href="#">
+                                        <img class="normal" src="./images/кошелек.svg" alt="">
+                                        <img class="active" src="./images/кошелекActive.svg" alt="">
+                                        Баланс</a>
+                                </li>
+                                <li class="nav-item border-0 ms-1">
+                                    <a class="nav-link d-flex gap-4" aria-current="page" href="#">
+                                        <img class="normal" src="./images/аватар.svg" alt="">
+                                        <img class="active" src="./images/аватарActive.svg" alt="">
+                                        Персональные данные</a>
+                                </li>
+                                <li class="nav-item border-0 ms-1">
+                                    <a class="nav-link d-flex gap-4" aria-current="page" href="#">
+                                        <img class="normal" src="./images/вопрос.svg" alt="">
+                                        <img class="active" src="./images/вопросActive.svg" alt="">
+                                        FAQ</a>
+                                </li>
+                                <li class="nav-item border-0 ms-1">
+                                    <a class="nav-link d-flex gap-4" aria-current="page" href="#">
+                                        <img class="normal" src="./images/гарнитура.svg" alt="">
+                                        <img class="active" src="./images/гарнитураActive.svg" alt="">
+                                        Техподдержка</a>
+                                </li>
+                                <li class="nav-item border-0 ms-1">
+                                    <a class="nav-link d-flex gap-4" aria-current="page" href="#">
+                                        <img class="normal" src="./images/выход.svg" alt="">
+                                        <img class="active" src="./images/выходActive.svg" alt="">
+                                        Выход</a>
+                                </li>
+                            </div>
+                        </div>
+                        </div>
+                    </nav>
+                </div>
+                <span class="col text-small p-0 d-none d-lg-block"> Главная 	&#62; Мои магазины </span>
                 <div class="col-auto">
-                    <button type="button" class="btn btn-outline-secondary border rounded-1">Почта</button>
-                    <button type="button" class="btn btn-light shadow rounded-1">
-                        <div class="icon rounded-circle text-bg-secondary"></div>
-                        Максим Добжанский
+                    <button type="button" class="btn btn-outline-secondary border rounded-1 p-4 mail mailActive">
+                        <img src="./images/envelope.svg" alt="">
+                    </button>
+                    <button type="button" class="btn btn-light rounded-1 d-inline-flex align-items-center gap-2 profile">
+                        <div class="icon rounded-circle"></div>
+                        <span class="d-none d-lg-block">Максим Добжанский</span>
                     </button>
                 </div>
             </header>
             <main class="main">
-                <button type="button" class="btn btn-success rounded-1" data-bs-toggle="modal" data-bs-target="#exampleModal">Создать свой магазин</button>
-                <h2>Управление магазинами</h2>
-
-                <div class="list-group p-4 bg-white">
+                <button type="button" class="btn tm-btn-success rounded-1 text-small create d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <b class="text-big plus">+</b> Создать свой магазин</button>
+                <h2 class="titleManagement text-big">Управление магазинами</h2>
+                <div class="list-group bg-white listShops table-responsive">
                     <table class="table table-borderless">
                         <thead>
                             <tr>
@@ -49,55 +168,87 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
+                            <tr class="align-middle">
                                 <td scope="row">12345</td>
                                 <td>Дипломная работа</td>
                                 <td>http://www.work5.ru/services</td>
                                 <td>
-                                    <button type="button" class="btn btn-success rounded-1">Редактировать</button>
-                                    <button type="button" class="btn btn-secondary rounded-1">Редактировать</button>
+                                    <button type="button" class="btn tm-btn-success p-2 rounded-1 text-small mb-2">
+                                        <img class="imgButton" src="./images/карандаш 1.svg" alt="">
+                                        Редактировать</button>
+                                    <button type="button" class="btn tm-btn-secondary p-2 rounded-1 text-small mb-2">
+                                        <img class="imgButton" src="./images/cansel.svg" alt="">
+                                        Редактировать</button>
                                 </td>
                             </tr>
-                            <tr class="border-top">
+                            <tr class="align-middle border-top">
                                 <td scope="row">12345</td>
                                 <td>Дипломная работа</td>
                                 <td>http://www.work5.ru/services</td>
                                 <td>
-                                    <button type="button" class="btn btn-success rounded-1">Редактировать</button>
-                                    <button type="button" class="btn btn-secondary rounded-1">Редактировать</button>
+                                    <button type="button" class="btn tm-btn-success p-2 rounded-1 text-small">
+                                        <img class="imgButton" src="./images/карандаш 1.svg" alt="">
+                                        Редактировать</button>
+                                    <button type="button" class="btn tm-btn-secondary p-2 rounded-1 text-small">
+                                        <img class="imgButton" src="./images/cansel.svg" alt="">
+                                        Редактировать</button>
                                 </td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
             </main>
-
             <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h5 class="modal-title fs-5" id="exampleModalLabel">Создать магазин</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-dialog modal-dialog-centered" id="myModal">
+                    <div class="modal-content shadow border-0">
+                      <div class="modal-header border-0">
+                        <h3 class="modal-title fs-5" id="exampleModalLabel"><b class="text-big">Создать магазин</b></h3>
+                        <button type="button" class="btn-close border rounded-circle border-secondary custom-close-button" data-bs-dismiss="modal" aria-label="Close"></button>
                       </div>
                       <div class="modal-body">
-                        <div>
-                            <h3>Шаблон</h3>
-                            <h3>Цветовая схема</h3>
+                        <div class="row mb-4">
+                            <div class="col-12 col-md-6 mt-2">
+                                <span><b>Шаблон</b></span>
+                                <select class="form-select shadow-none text-small mt-2 selects" aria-label="Default select example">
+                                    <option value="1" selected>Стандартный</option>
+                                    <option value="2">Простой</option>
+                                    <option value="3">Кастомный</option>
+                                </select>
+                            </div>
+                            <div class="col-12 col-md-6 mt-2">
+                                <span><b>Цветовая схема</b></span>
+                                <select class="form-select shadow-none text-small mt-2 selects" aria-label="Default select example">
+                                    <option value="1" selected>Класическая</option>
+                                    <option value="2">Бежевая</option>
+                                    <option value="3">Синяя</option>
+                                    <option value="4">Зеленая</option>
+                                </select>
+                            </div>
                         </div>
-                        <h3>Домен</h3>
-                        <span>В названии домена разрешены латиница и “-”, запрещается использовать словосочетание Work 5. 
-                            После создания магазина Вы сможете прикрутить свой домен (например ivangrozniy.ru). Подробнее по ссылке
-                        </span>
+                        <span><b>Домен</b></span>
+                        <div class="input-group mb-3 mt-2 rounded-1">
+                            <input type="text" class="form-control shadow-none text-input" id="myInput" placeholder="Например: ivangrozniy" aria-label="Например: ivangrozniy" aria-describedby="basic-addon2">
+                            <span class="input-group-text color-input" id="basic-addon2">.work5.ru</span>
+                        </div>
+                        <div class="d-flex gap-3">
+                            <img class="d-block" src="./images/предупреждение 1.svg" alt="">
+                            <span class="text-small">В названии домена разрешены латиница и “-”, запрещается использовать словосочетание Work 5. 
+                            После создания магазина Вы сможете прикрутить свой домен (например ivangrozniy.ru). Подробнее по 
+                            <a class="linkMore text-decoration-none text-small" href="#">ссылке</a>
+                            </span>
+                        </div>
+                        
                       </div>
-                      <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary rounded-1" data-bs-dismiss="modal">Отмена</button>
-                        <button type="button" class="btn btn-success rounded-1">Создать</button>
+                      <div class="modal-footer border-0 justify-content-start">
+                        <button type="button" class="btn tm-btn-secondary rounded-1 modalButton" data-bs-dismiss="modal">Отмена</button>
+                        <button type="button" class="btn tm-btn-success rounded-1 modalButton" id="submit" data-bs-dismiss="modal">Создать</button>
                       </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <script src="./js/index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>
